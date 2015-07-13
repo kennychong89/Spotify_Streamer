@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nano.kenny.spotifystreamer_final.activities.TrackDetailActivityFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/album_cover_track_detail"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/track_title_track_detail"
+        android:textStyle="bold"
+        android:layout_below="@+id/album_cover_track_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/album_name_track_detail"
+        android:layout_below="@+id/track_title_track_detail"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_track_detail"
+        android:layout_marginTop="19dp"
+        android:layout_below="@id/album_name_track_detail"
+        android:layout_alignLeft="@+id/previous_button_track_detail"
+        android:layout_alignStart="@+id/previous_button_track_detail"
+        android:layout_alignRight="@+id/forward_button_track_detail"
+        android:layout_alignEnd="@+id/forward_button_track_detail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_start_seek_time"
+        android:gravity="center"
+        android:id="@+id/start_track_timer"
+        android:layout_alignTop="@+id/seekBar_track_detail"
+        android:layout_toLeftOf="@+id/seekBar_track_detail"
+        android:layout_toStartOf="@+id/seekBar_track_detail"
+        android:layout_alignBottom="@+id/seekBar_track_detail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_end_seek_time"
+        android:gravity="center"
+        android:id="@+id/end_track_timer_track_detail"
+        android:layout_toRightOf="@+id/seekBar_track_detail"
+        android:layout_toEndOf="@+id/seekBar_track_detail"
+        android:layout_alignBottom="@+id/seekBar_track_detail"
+        android:layout_alignTop="@+id/seekBar_track_detail" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shuffle_button_track_detail"
+        android:src="@mipmap/ic_shuffle_black_24dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/start_track_timer"
+        android:layout_alignLeft="@+id/start_track_timer"
+        android:layout_alignStart="@+id/start_track_timer"
+        android:layout_alignBottom="@+id/previous_button_track_detail" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repeat_button_track_detail"
+        android:src="@mipmap/ic_repeat_black_24dp"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/forward_button_track_detail"
+        android:layout_alignRight="@+id/end_track_timer_track_detail"
+        android:layout_alignEnd="@+id/end_track_timer_track_detail"
+        android:layout_alignBottom="@+id/forward_button_track_detail" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/previous_button_track_detail"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/ic_skip_previous_black_48dp"
+        android:layout_alignTop="@+id/play_button_track_detail"
+        android:layout_toLeftOf="@+id/play_button_track_detail"
+        android:layout_toStartOf="@+id/play_button_track_detail"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_button_track_detail"
+        android:src="@mipmap/ic_play_circle_outline_black_48dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/seekBar_track_detail"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forward_button_track_detail"
+        android:src="@mipmap/ic_skip_next_black_48dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/seekBar_track_detail"
+        android:layout_toRightOf="@+id/play_button_track_detail"
+        android:layout_toEndOf="@+id/play_button_track_detail"
+         />
+</RelativeLayout>

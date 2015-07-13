@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#2ecc71</item>
+    <item name="transparent_green" type="color">#2ECC7155</item>
+</resources>

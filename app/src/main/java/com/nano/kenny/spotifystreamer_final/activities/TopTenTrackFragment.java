@@ -76,8 +76,6 @@ public class TopTenTrackFragment extends Fragment {
 
             if (artistParcel != null)
                 getTopTenTracks(artistParcel.getSpotifyID());
-            else
-                Log.d("Artist Parcel", "is null");
         }
     }
 
